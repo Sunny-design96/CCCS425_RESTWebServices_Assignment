@@ -8,7 +8,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet("/student/*")
+@WebServlet("/student")
 public class StudentServlet extends HttpServlet{
 	private Student student;
 	
@@ -42,6 +42,10 @@ public class StudentServlet extends HttpServlet{
 		Student student = new Student(studentId, name, email);
 		String msg = "Student " + student.toString() + " created.";
 		sendResponse(response, msg);
+		
+		String contextPath = request.getContextPath();
+		System.out.println(contextPath);
 	}
+	
 
 }

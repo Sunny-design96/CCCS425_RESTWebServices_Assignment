@@ -6,10 +6,6 @@ display-name="Student User Management"
 >
 <servlet>
 	<servlet-name>StudentServlet</servlet-name>
-	<servlet-class>com.mcgill.java.StudentServlet.java</servlet-class>
+	<servlet-class>com.mcgill.java.StudentServlet</servlet-class>
 </servlet>
-<servletMapping>
-	<servlet-name>StudentServlet</servlet-name>
-	<url-pattern>/student</url-pattern>
-</servletMapping>
 </web-app>
