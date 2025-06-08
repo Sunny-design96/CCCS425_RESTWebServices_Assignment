@@ -1,9 +1,10 @@
 package com.mcgill.java;
 
 import java.util.concurrent.*;
+import java.io.Serializable;
 import java.util.*;
 
-public class Student {
+public class Student implements Serializable{
 	private int id;
 	private String name;
 	private String email;

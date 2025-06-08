@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xsi = "http://www.w3.org/2001/xml"
+xmlns = "https://jakarta.ee/xml/ns/jakartaee"
+version="1.0"
+display-name="Student User Management"
+>
+<servlet>
+	<servlet-name>StudentServlet</servlet-name>
+	<servlet-class>com.mcgill.java.StudentServlet.java</servlet-class>
+</servlet>
+<servletMapping>
+	<servlet-name>StudentServlet</servlet-name>
+	<url-pattern>/student</url-pattern>
+</servletMapping>
+</web-app>
